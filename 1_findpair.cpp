@@ -15,7 +15,7 @@ int find_pair(int arr[],int n,int p){
        for(int i=0;i<n;i++){
         for(int j=i+1;j<n-1;j++){
             if(arr[i]+arr[j]==p){
-                cout<<"element found at "<<i<<"and"<<j<<"positions:( "<<arr[i]<<" ,"<<arr[j]<<")"<<endl;
+                cout<<"element found at "<<i<<" and "<<j<<"positions:( "<<arr[i]<<" ,"<<arr[j]<<")"<<endl;
                 return 1;//In c language no need to mention the return value
             }
 
@@ -27,7 +27,7 @@ int find_pair(int arr[],int n,int p){
 
 }
 int main(){
-int arr[]={1,2,3,4,5},n,p=6;
+int arr[]={8, 7, 2, 5, 3, 1},n,p=10;
 n=sizeof(arr)/sizeof(arr[0]);
 find_pair(arr,n,p);
 return 0;
