@@ -12,22 +12,24 @@ Practice this problem
 #include<iostream>
 using namespace std;
 int find_pair(int arr[],int n,int p){
+    int flag=true;
        for(int i=0;i<n;i++){
-        for(int j=i+1;j<n-1;j++){
+        for(int j=i+1;j<n;j++){
             if(arr[i]+arr[j]==p){
                 cout<<"element found at "<<i<<" and "<<j<<"positions:( "<<arr[i]<<" ,"<<arr[j]<<")"<<endl;
-                return 1;//In c language no need to mention the return value
+               // return 1;//In c language no need to mention the return value
+               flag=false;
             }
 
 
         }
        }
-
+            if(flag)
                 cout<<"Element cannot be paired"<<endl;
 
 }
 int main(){
-int arr[]={8, 7, 2, 5, 3, 1},n,p=10;
+int arr[]={8, 7, 2, 5, 3, 1,9},n,p=10;
 n=sizeof(arr)/sizeof(arr[0]);
 find_pair(arr,n,p);
 return 0;

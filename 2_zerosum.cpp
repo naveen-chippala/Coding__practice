@@ -25,6 +25,7 @@ for(int i=0;i<n;i++ ){
     }
 }
 }*/
+bool flag=true;
 int s=0;
  for(int i= 0 ;i < n ; i ++ ){
         s=arr[i];
@@ -32,18 +33,21 @@ int s=0;
 
      s = s + arr [ j ] ;
         if(s == 0){
-           cout<<"zero sum exists" <<endl;
-           return 1;
+           cout<<"zero sum exists at "<<i<<"..."<<j<<endl;
+           //return 1;
+           flag=false;
         }
 
 }
 
 
 }
+if(flag)
   cout<<"not exists\n";
   return 1;
 }
 void printsub_array(int arr[], int n){
+    cout<<"printing all sub array eements"<<endl;
         for(int st=0;st<n;st++){
             for(int en=st;en<n;en++){
                 for(int k=st;k<=en;k++){
@@ -55,7 +59,7 @@ void printsub_array(int arr[], int n){
 }
 
 int main(){
-int arr[]={1,2,3,4,5,-1,1};
+int arr[]={3, 4, -7, 3, 1, 3, 1, -4, -2, -2};
 int n= sizeof(arr)/sizeof(arr[0]);
 subarray(arr,n);
 printsub_array(arr,n);
