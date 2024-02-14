@@ -14,16 +14,17 @@ for(int i=0;i<n;i++)
             prev_prod=current_prod;
             a=i;
             b=j;
-cout<<"largest product is  --"<<prev_prod<<"at index: ( "<<a<<", "<<b<<" )";
+
         }
 
     }
 
 }
+  cout<<"largest product is  "<<prev_prod<<"at index: ( "<<a<<", "<<b<<" )"<<endl;
 
 }
 int main(){
-int arr[]={-10, -3, 5, 6, -2};
+int arr[]={10, 2, 5, 6, -2};
 int n=sizeof(arr)/sizeof(arr[1]);
 max_product(arr,n);
 return 0;
