@@ -41,3 +41,21 @@ int main()
     max_lensub_arr(arr,n,ele);
     return 0;
 }
+/*You have been given three arrays A, B, and C in sorted format. By comparing all three arrays, pull the least possible range.
+Note: One element should be present mandatory from every array
+Example:
+Input:
+arr1 = {3, 6, 8, 10, 15}
+arr2 = {1, 5, 12}
+arr3 = {4, 8, 15, 16}
+Output: (3, 5)
+Input format :
+The input consists of three lists, a, b, and c, where each list contains a series of integers.
+The fi rst line of input represents the length of list a.
+The second set of lines represents the elements of a list a.
+The third line represents the length of list b.
+The fourth set of lines represents the elements of list b.
+The fi fth line represents the length of list c, and the sixth set of lines represents the elements of list c.
+Output format :
+The output is a pair of two integers representing the minimum range containing at least one element from each of the three input lists.*/
+

@@ -8,7 +8,7 @@ void max_product (int arr[],int n){
 int current_prod=0,prev_prod=0,a,b;
 for(int i=0;i<n;i++)
 {
-    for(int j=i+1;j<=i+1;j++){
+    for(int j=i+1;j<n;j++){
             current_prod=arr[i]*arr[j];
         if(current_prod>0 && prev_prod<=current_prod){
             prev_prod=current_prod;
@@ -20,11 +20,11 @@ for(int i=0;i<n;i++)
     }
 
 }
-  cout<<"largest product is  "<<prev_prod<<"at index: ( "<<a<<", "<<b<<" )"<<endl;
+  cout<<"largest product is  "<<prev_prod<<"at index: ( "<<a<<" and "<<b<<" )"<<endl;
 
 }
 int main(){
-int arr[]={10, 2, 5, 6, -2};
+int arr[]={-10, -3, 5, 6, -2};
 int n=sizeof(arr)/sizeof(arr[1]);
 max_product(arr,n);
 return 0;
